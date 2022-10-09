@@ -26,6 +26,13 @@ hr
     box-sizing: content-box;
     -webkit-appearance: none;
 }
+@media only screen and (max-width:500px){
+    .app-input
+    {
+        width: 17rem;
+        margin-bottom: 10px;
+    }
+}
 .submitButton
 {
     background: #06f;
