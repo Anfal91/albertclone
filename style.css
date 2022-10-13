@@ -14,6 +14,7 @@ hr
 }
 .app-input
 {
+    margin: 10px 0;
     background: #f2f3f7;
     border: 1px solid #f2f3f7;
     padding: 0 1em;
