@@ -10,19 +10,26 @@
 </head>
 <body>
     <div class="container content text-center">
-        <h2 style="margin-top: 80px;">
+      <div class="logo">
+        <img src="images/Untitled_design__5_-removebg-preview.png" alt="">
+      </div>
+        <h2>
             Get up to $250  in 2 minutes
         </h2>
         <p style="margin: 30px 0;">No credit check, interest, or late fees. Add your email to see what you qualify for:</p>
 
-        <form onsubmit="mail(); reset(); return false;">
-        <input class="app-input" id="name" name="Name" type="text" placeholder="Enter your Name"><br>
-        <input class="app-input" id="email" name="email" type="email" placeholder="Enter your email"><br>
-        <input class="app-input" id="number" name="Number" type="text" placeholder="Enter your Contact No"><br>
-        <button type="submit" class="submitButton">
-            <span class="text-me" data-cta="Join today">Join today</span>
-          </button>
-          </form>
+          <form action="https://formsubmit.co/anfalvaktapurya91@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New submission!">
+            <input type="hidden" name="_next" value="https://thankyoupage.com/index.html">
+            <input class="app-input" id="name" name="Name" type="text" placeholder="Enter your Name"><br>
+            <input class="app-input" id="email" name="email" type="email" placeholder="Enter your email"><br>
+            <input class="app-input" id="number" name="Number" type="text" placeholder="Enter your Contact No"><br>
+            <button onclick="mail()" type="submit" class="submitButton">
+                <span class="text-me" data-cta="Join today">Join today</span>
+              </button>
+       </form>
+
           <div class="container slider">
               <img class="appImg" src="images/img_instantadvance.png" alt="">
 
@@ -159,22 +166,9 @@
     <script>
     function mail()
     {
-        let name = document.getElementById("name").value;
-        let email = document.getElementById("email").value;
-        let number = document.getElementById("number").value;
-
-        Email.send({
-            Host: "smtp.elasticemail.com",
-            Username: "techonline833@gmail.com",
-            Password: "770BF1AC609BF0813C998F2560DC3A99D368",
-            To: 'lifehelper108@gmail.com',
-            From: document.getElementById("email").value,
-            Subject: name+" is new customer",
-            Body: "Forex Service Mail<br>"+"<br>Name: "+name+"<br>Contact no: "+number+"<br>Email id: "+email
-        }).then(
-            message => alert("your enquiry was sent successfully, You can refresh your page")
-        );
+      alert("Your data has sent successfully, again refresh your page")
     }
+
     </script>
 </body>
 </html>
